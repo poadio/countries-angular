@@ -1,5 +1,21 @@
-<h2 class="title">List countries</h2>
-<div class="title ui relaxed divided list">
+<br>
+<div *ngIf="!d" class="padding ui warning message">
+    <div class="header">
+        You must have installed countries demo table in order to run this demo
+    </div>
+    <ol>
+        <li>Go to your dashboard</li>
+        <li>Click on your project</li>
+        <li>Click on Database</li>
+        <li>Click on SQL Editor</li>
+        <li>Click on SQL Snippets</li>
+        <li>Select Countries</li>
+        <li>Click RUN</li>
+        <li>That's all</li>
+    </ol>
+</div>
+<h2 class="padding">List countries</h2>
+<div class="padding ui relaxed divided list">
     <div class="item" *ngFor="let item of d">
         <i class="large angle right middle aligned icon"></i>
         <div class="content">
